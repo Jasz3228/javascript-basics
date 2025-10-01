@@ -65,3 +65,34 @@
         let b2 = prompt("Second number?", 2);
 
         console.log(+a1 + +b2);
+
+    // Data types task
+
+        // What is output of the script?
+
+        let name2 = "Ilya";
+
+        alert( `hello ${1}` ); // hello 1
+
+        alert( `hello ${"name"}` ); // hello name
+
+        alert( `hello ${name2}` ); // ? hello Ilya
+    
+    // Comparisons
+
+        //What will be the result for these expressions?
+
+        5 > 4 // true
+
+        "apple" > "pineapple" // false
+
+        "2" > "12" // true
+
+        undefined == null // true
+
+        undefined === null // false
+
+        null == "\n0\n" // false
+
+        null === +"\n0\n" // false
+
