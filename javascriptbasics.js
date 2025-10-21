@@ -294,3 +294,44 @@
   //   output.appendChild(para);
   //   i--;
   // }
+
+  // MDN loops exercise Filling in a guest list
+  // My solution
+
+  //   const people = [
+  //   "Chris",
+  //   "Anne",
+  //   "Colin",
+  //   "Terri",
+  //   "Phil",
+  //   "Lola",
+  //   "Sam",
+  //   "Kay",
+  //   "Bruce",
+  // ];
+
+  //   const admitted = document.querySelector(".admitted");
+  //   const refused = document.querySelector(".refused");
+  //   admitted.textContent = "Admit: ";
+  //   refused.textContent = "Refuse: ";
+
+  //   // loop starts here
+  //   for (const guest of people) {
+  //     if (guest === "Phil" || guest === "Lola") {
+  //       refused.textContent += guest + " ";
+  //     } else {
+  //       admitted.textContent += guest + " ";
+  //     }
+  //   }
+
+  // MDN solution
+    // for (const person of people) {
+    //   if (person === "Phil" || person === "Lola") {
+    //     refused.textContent += `${person}, `;
+    //   } else {
+    //     admitted.textContent += `${person}, `;
+    //   }
+    // }
+
+    // refused.textContent = `${refused.textContent.slice(0, -2)}.`;
+    // admitted.textContent = `${admitted.textContent.slice(0, -2)}.`;
