@@ -361,3 +361,60 @@
         //     () => alert("You agreed.")
         // );
         
+// Loops Javascript.info
+    
+    // The "while" loop
+    
+    // let i = 0;
+    // while (i < 3) { //shows 0, then 1, then 2
+    //     alert(i);
+    //     i++;
+    // }
+    
+    // The "do... while" loop
+    
+    // let i = 0;
+    //  do {
+    //     alert(i);
+    //     i++;
+    //   } while (i < 3); // Used when you want the body of the loop to execute at least once.
+
+    // The "for" loop
+
+    // for (let i = 0; i < 3; i++) {
+    //     alert(i); // Shows 0, then 1, then 2
+    // }
+
+    // Breaking the loop
+
+        // let sum = 0;
+
+        // while (true) {
+        //     let value = +prompt("Enter a number", "");
+            
+        //     if (!value) break;
+
+        //     sum += value
+
+        // }
+        // alert("Sum: " + sum );
+
+    // Continue to the next iteration
+
+        // for (let i = 0; i < 10; i++) {
+        //     // if true, skip the remaining part of the body
+        //     if (i % 2 == 0) continue;
+
+        //     alert(i); // outputs odd numbers before reaching 10
+        // }
+
+    // Labels for break/continue
+
+        // outer: for (let i = 0; i < 3; i++) {
+        //     for (let j = 0; j < 3; j++) {
+        //         let input = prompt(`Value at coords (${i}, ${j})`, "");
+
+        //         // if an empty string or canceled, then break out of both loops
+        //         if (!input) break outer;
+        //     }
+        // }
