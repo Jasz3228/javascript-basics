@@ -514,4 +514,42 @@
                 //     }
                 //     console.log(i); // a prime
                 // }
-             
+        
+// Notes on arrays javascript.info
+
+    // array syntax
+    // let arr = ["a", "b", "c"];
+    // to use an element console.log(arr[0]) // A
+    // replace a element arr[0] = "1" // [1, "b", "c"]
+    // add a new element arr[3] = "d" // now [1, "b", "c", "d"]
+    // find the length of the array console.log(arr.length)
+    // show the whole array console.log(arr)
+    // arrays can store elements of any type
+    // Get the last element with .at console.log(arr.at(-1))
+    // a queue is one of the most common uses of an array
+    // it is a ordered collection of elements that support two operations
+    // push and shift.
+    // shift = get an element from the beginning, advancing the queue so the   2nd element becomes the 1st
+    // push appends an element to the end.
+    // another use case would be a data structure named stack
+    // also supports two operations, push and pop
+    // push adds an element to the end, pop takes an element from the end.
+    // For stacks the latest pushed item is received first. (last in first out)
+    // For queues we use (first in first out)
+    // pop extracts the last element of the array and returns it
+    // console.log(arr.pop() ) removes "d" pop will modify the array 
+    // console.log(arr.push("d")) adds the "d" back to the end
+    // shift extracts the first element of the array and returns it
+    // console.log(arr.shift()) removes "1"
+    // console.log(arr.unshift("1")) adds "1" back to the beginning
+    // Looping through arrays
+    //  let arr = ["Apple", "orange", "Pear"];
+    //  for (let i = 0; i < arr.length; i++) {
+    //        console.log(arr[i])
+    //      }
+    // For arrays there is the for.. of loop
+    //  let fruits = ["Apple", "Orange", "Pear"];
+    //  for (let fruit of fruits) {
+    //      console.log(fruit);
+    //  }
+    // simplest way to clear an array is with length arr.length = 0;
