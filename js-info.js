@@ -553,3 +553,101 @@
     //      console.log(fruit);
     //  }
     // simplest way to clear an array is with length arr.length = 0;
+    // Multidimensional arrays. Arrays within arrays
+    // let matrix = [
+    //     [1, 2, 3]
+    //     [4, 5, 6]
+    //     [7, 8, 9]
+    //   ];
+    // console.log(matrix[0][1]); // 2 the second value in the first array
+    // Arrays implementation of toString 
+    //  let arr = [1, 2, 3];
+    //  console.log(String(arr) === "1,2,3"); true
+    
+    // Array methods
+    // splice can insert, remove and replace elements from arrays
+    // console.log(splice(start[, deleteCount, elem1, ..., elemN]));
+    // start: removes deleteCount elements and then inserts elem1, ..., elemN at their place.
+    // let arr = ["I", "study", "JavaScript"];
+    // console.log(arr.splice(1, 1)); // From index 1 remove 1 element
+    // console.log(arr); // ["I", "Javascript"];
+    // Next we remove 3 elements and replace them with the other two
+    //  let arr = ["I", "study", "JavaScript", "right", "now"];
+    //  arr.splice(0, 3, "Let's", "dance");
+    //  console.log(arr); // ["Let's", "dance", "right", "now"]
+    // let arr = ["I", "study", "JavaScript", "right", "now"];
+    // let removed = arr.splice(0, 2);
+    // console.log(removed); // ["I", "study"] <-- array of removed elements
+    // splice can also insert the elements without any removals.
+    // let arr = ["I", "study", "JavaScript"];
+    // from index 2, delete 0, insert "complex", "language"
+    // arr.splice(2, 0, "complex", "language")
+    // console.log(arr); // ["I", "study", "complex", "language", "JavaScript"]
+    // negative indexes allowed let arr = [1, 2, 5];
+    // from index -1 (one step from the end) // delete 0 elements insert 3, 4
+    // arr.splice(-1, 0, 3, 4) console.log(arr); // [1,2,3,4,5]
+
+    // slice syntax arr.slice([start], [end]);
+    // returns a new array copying all items from index start to end
+    // similar to string.slice instead makes subarrays.
+    // let arr = ["t", "e", "s", "t"];
+    // console.log(arr.slice(1,3)) // e,s does not include the end
+    // console.log(arr.slice(-2)); // s,t copy from -2 till the end
+    // can call it without args arr.slice() creates a copy of arr
+
+    // concat creates a new array that includes values from other arrays and additonal items
+    // arr.concat(arg1, arg2...) accepts any number of args arrays or values
+    // let arr = [1,2];
+    // console.log(arr.concat([3,4])); // 1,2,3,4
+    // console.log(arr.concat([3,4], [5,6])); // 1,2,3,4,5,6
+
+    // iterate: forEach method allows to run a function for every element
+    // arr.forEach(function(item, index, array) {
+    //      ... do something with an item
+    //    });
+    // ["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+    
+    // ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+    //   alert(`${item} is at index ${index} in ${array}`);
+    //  });
+
+    // Searching in array indexOf/lastIndexOf and includes
+    // arr.indexOf(item, from) looks for item starting from and returns where it was found else -1
+    // arr.includes(item, from) looks for item starting from, returns true if found. Usually these methods are used with only one argument the item to search by default search is from the beginning.
+    // let arr = [1,0, false];
+    // console.log(arr.indexOf(0)); // 1 console.log(arr.indexOf(false)) // 2
+    // console.log(arr.indexOf(null)) // -1 console.log(arr.inludes(1)); // true
+    // indexOf uses strict equality ===
+    // arr.includes is preferred if we want to check if the item exists in the array and don't need the index.
+    // arr.lastIndexOf same as indexOf but looks for from right to left
+    // finding an object with a specific condition from an array
+    
+    // let result = arr.find(function(item, index, array) {
+    // if true is returned, item is returned and iteration is stopped
+    // for falsy scenario returns undefined
+    // });
+    // item is the element index is the index array is the array itself
+    // let users = [
+    //  {id: 1, name: "John"},
+    //  {id: 2, name: "Pete"},
+    //  {id: 3, name: "Mary"}
+    //  ];
+    //  let user = users.find(item => item.id == 1);
+    // console.log(user.name); // John
+    // arr.findIndex is same syntax but returns the index -1 returned if nothing found
+    // arr.findLastIndex searches from right to left
+
+    // filter used when finding many elements. syntax similar to find but returns an array of all matching elements.
+
+    // Transform an array
+    // arr.map one of the most useful. it calls the function for each element of the array and returns the array of results.
+    // let result = arr.map(function(item, index, array) {
+    //  returns the new value instead of item
+    //  });
+    // let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+    // console.log(lengths); // 5,6,7
+    // sort arr.sort() sorts the array in place, changing its element order.
+    // let arr = [1 , 2, 15];
+    // arr.sort();
+    // arr.reverse(); does what is says
+    //
