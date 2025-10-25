@@ -338,7 +338,7 @@
     // Rewrite with arrow functions
     
     /* function ask(question, yes, no) {
-            if (confirm(quesion)) yes();
+            if (confirm(question)) yes();
             else no();
         }
         
@@ -428,7 +428,7 @@
 
             // while (i) {
             // alert( i-- );
-            // } // The last value is 1 becasue 0 will be the first falsy value.
+            // } // The last value is 1 because 0 will be the first falsy value.
 
         // Which values does the "while" loop show?
             // For every loop iteration, write down which value it outputs and then compare it with the solution.
@@ -446,7 +446,7 @@
             //      while (i++ < 5) alert( i ); // alerts 1, 2, 3, 4, 5
 
         // Which values get shown by the "for" loop?
-            // For each loop write tdown which values it is going to show. Then compare with the answer.
+            // For each loop write down which values it is going to show. Then compare with the answer.
 
             // Both loops alert same values or not?
 
@@ -589,13 +589,13 @@
 
     // slice syntax arr.slice([start], [end]);
     // returns a new array copying all items from index start to end
-    // similar to string.slice instead makes subarrays.
+    // similar to string.slice instead makes sub arrays.
     // let arr = ["t", "e", "s", "t"];
     // console.log(arr.slice(1,3)) // e,s does not include the end
     // console.log(arr.slice(-2)); // s,t copy from -2 till the end
     // can call it without args arr.slice() creates a copy of arr
 
-    // concat creates a new array that includes values from other arrays and additonal items
+    // concat creates a new array that includes values from other arrays and additional items
     // arr.concat(arg1, arg2...) accepts any number of args arrays or values
     // let arr = [1,2];
     // console.log(arr.concat([3,4])); // 1,2,3,4
@@ -616,7 +616,7 @@
     // arr.includes(item, from) looks for item starting from, returns true if found. Usually these methods are used with only one argument the item to search by default search is from the beginning.
     // let arr = [1,0, false];
     // console.log(arr.indexOf(0)); // 1 console.log(arr.indexOf(false)) // 2
-    // console.log(arr.indexOf(null)) // -1 console.log(arr.inludes(1)); // true
+    // console.log(arr.indexOf(null)) // -1 console.log(arr.includes(1)); // true
     // indexOf uses strict equality ===
     // arr.includes is preferred if we want to check if the item exists in the array and don't need the index.
     // arr.lastIndexOf same as indexOf but looks for from right to left
@@ -650,4 +650,20 @@
     // let arr = [1 , 2, 15];
     // arr.sort();
     // arr.reverse(); does what is says
-    //
+    
+    // split and join 
+    // str.split(delim) method splits the string into an array by the given delimiter(delim)
+    // let names = "Bilbo", Gandalf, Nazgul";
+    // let arr = names.split(", ");
+    // for (let name of arr) {
+    //    alert( `A message to ${name}.`). // A message to Bilbo (and others)
+    // } split has a second optional numeric argument. a limit on array length
+    // If provided the extra elements are ignored
+    // The call to split(s) with an empty s(" ") would split the string into an array of letters:
+    // let str = "test";
+    // alert(str.split("")); // t,e,s,t
+
+    // arr.join(glue) does the reverse to split. Will creates a string of arr items joined by glue between them
+    // let arr = ["Bilbo", "Gandalf", "Nazgul"];
+    // let str = arr.join(";"); // glue the array into a string using ;
+    // alert(str); // Bilbo;Gandalf;Nazgul
