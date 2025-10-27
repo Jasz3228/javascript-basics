@@ -355,3 +355,37 @@
           //  }
           //  return sum;
         // }
+
+        // ** Callback as an argument another way of saying "I want you to pass
+        // another function as an argument to my function".
+
+        // *The map method map()*
+        
+        // function addOne(num) {
+        //    return num + 1;
+        // }
+        // const arr = [1,2,3,4,5];
+        // const mappedArr = arr.map(addOne);
+        // console.log(mappedArr); // Outputs [2,3,4,5,6] returns new array
+        // console.log(arr) // [1,2,3,4,5]
+        
+        //*** or ****
+        
+        // const arr = [1,2,3,4,5];
+        // const mappedArr = arr.map((num) => num + 1);
+        // console.log(mappedArr); // [2,3,4,5,6]
+
+        // The filter method filter()
+
+        // ** Similar to map by iterating over the array and applying the 
+        // function, however it returns a new array where each item is only included IF the callback function returns true for it.
+
+        // function isOdd(num) {
+        //    return num % 2 !== 0; 
+        // }
+        // const arr = [1,2,3,4,5];
+        // const oddNums = arr.filter(isOdd);
+        // console.log(oddNums); // Output [1,3,5];
+        // console.log(arr); // Output the original array
+        // ** filter() expects the callback to return either true or false.
+
