@@ -97,7 +97,7 @@
 // 1. When a user inputs a number
 // 2. Loop from 1 to the entered number
 // 3. If the current number is divisible by 3 then print "Fizz"
-// 4. If the current nubmer is divisble by 5 then print "Buzz"
+// 4. If the current number is divisible by 5 then print "Buzz"
 // 5. If the current number is divisible by 3 and 5 then print "FizzBuzz"
 // 6. Otherwise print the current number
 
@@ -129,7 +129,7 @@
     */
 
     // map() and filter()
-    // map() creates a new collection containg the changed items.
+    // map() creates a new collection containing the changed items.
     
     /*
       function toUpper(string) {
@@ -229,7 +229,7 @@
 
     // console.log(myFavoriteCats); // "My cats are called Pete, Biggles, and Jasmine."
 
-  // THE DO...WHILE LOOP code inside is ALSWAYS executed at least once
+  // THE DO...WHILE LOOP code inside is ALWAYS executed at least once
     // initializer
     // do {
        // code to run
@@ -255,7 +255,7 @@
     //   i++;
     // } while (i < cats.length);
 
-    // console.log(myFavoriteCats); // "My cats are calle Pete, Biggles, and Jasmine."
+    // console.log(myFavoriteCats); // "My cats are called Pete, Biggles, and Jasmine."
 
 // IMPLEMENTING A LAUNCH COUNTDOWN Exercise on MDN
 
@@ -375,7 +375,7 @@
         // const mappedArr = arr.map((num) => num + 1);
         // console.log(mappedArr); // [2,3,4,5,6]
 
-        // The filter method filter()
+        // *The filter method filter()*
 
         // ** Similar to map by iterating over the array and applying the 
         // function, however it returns a new array where each item is only included IF the callback function returns true for it.
@@ -389,3 +389,22 @@
         // console.log(arr); // Output the original array
         // ** filter() expects the callback to return either true or false.
 
+        // *The reduce method()*
+
+        // ** reduce() expects a callback function however it takes two arguments
+        // The first being the accumulator followed by current value (accumulator, current)
+        
+        // const arr = [1,2,3,4,5];
+        // const productOfAllNums = arr.reduce((total, currentItem) => {
+        //    return total * currentItem;
+        // }, 1);
+        // console.log(productOfAllNums); // Outputs 120;
+        // console.log(arr); // Outputs // [1,2,3,4,5]
+
+        // Rewritten sumOfTripledEvens(array)function
+        // function sumOfTripledEvens(array) {
+        //    return array
+        //      .filter((num) => % 2 === 0)
+        //      .map((num) => num * 3)
+        //      .reduce((acc, curr) => acc + curr);
+        // }
