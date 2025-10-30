@@ -408,3 +408,91 @@
         //      .map((num) => num * 3)
         //      .reduce((acc, curr) => acc + curr);
         // }
+
+// ** The Odin Project Assignments Foundations loops and arrays **
+
+  // Translate border-left-width to borderLeftWidth
+      // function camelize(str) {
+        // return str
+          // .split("-")
+          // .map((word, index) => index === 0 
+          // ? word 
+          // : word[0].toUpperCase() + word.slice(1)
+        // )
+        // .join("");
+      // }
+      // console.log(camelize("border-left-width"));
+
+  // Filter range
+      // function filterRange(arr, a, b) {
+        // return arr.filter(item => (a <= item && item <= b));
+      // }
+      // let arr = [5, 3, 8, 1];
+      // let filtered = filterRange(arr, 1, 4);
+      // console.log(filtered);
+      
+  // Filter range "in place"
+    //  function filterRangeInPlace(arr, a, b) {
+    //   for (let i = 0; i < arr.length; i++) {
+    //     let val = arr[i];
+
+    //     // remove if outside of the interval
+    //     if (val < a || val > b) {
+    //       arr.splice(i, 1);
+    //       i--;
+    //     }
+    //   }
+    // }
+    // let arr = [5, 3, 8, 1];
+    // filterRangeInPlace(arr, 1, 4);
+    // console.log(arr);
+  // Sort in decreasing order
+    // let arr = [5,2,1,-10,8];
+
+    // arr.sort((a,b) => b - a);
+
+    // console.log(arr);
+  // Copy and sort array
+      // function copySorted(arr) {
+      //   return arr.slice().sort();
+      // }
+      // let arr = ["HTML", "JavaScript", "CSS"];
+      // let sorted = copySorted(arr);
+      // console.log(sorted);
+      // console.log(arr);
+  // Shuffle an array
+      // function shuffle(array) {
+      //   array.sort(() => Math.random() - 0.5);
+      // }
+
+      // let arr = [1,2,3];
+    //  console.log(shuffle(arr));
+    //  console.log(arr);
+
+    // The better approach... Fisher-Yates shuffle:
+      // function shuffle(array) {
+      //   for (let i = array.length - 1; i > 0; i--) {
+      //     const j = Math.floor(Math.random() * (i + 1));
+      //     [array[i], array[j]] = [array[j], array[i]];
+      //   }
+      //   return array;
+      // }
+      // let array = [1,2,3];
+      // console.log(shuffle(array));
+  // Filter unique array members
+      // function unique(arr) {
+      //   let result = [];
+
+      //   for (let str of arr) {
+      //     if (!result.includes(str)) {
+      //       result.push(str);
+      //     }
+      //   }
+      //   return result;
+      // }
+      
+      // let strings = ["Hare", "Krishna", "Hare", "Krishna",
+      //     "Krishna", "Krishna", "Hare", "Hare", ":-O"
+      //   ];
+      
+      // console.log(unique(strings)); // Hare, Krishna, :-0
