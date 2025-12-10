@@ -496,3 +496,96 @@
       //   ];
       
       // console.log(unique(strings)); // Hare, Krishna, :-0
+
+
+  
+// --- JavaScript object basics ---
+
+  // local copy of examples I followed along with MDN in oojs-mdn.html
+  
+    // Object basics
+      // An object is a collection of related data and or functionality. Usually consisting of several variables and functions (properties and methods when inside objects).
+
+      // Creating a object often begins with defining and initializing a variable
+
+      // Object literal
+        // const person = {
+          //   name: ["Bob", "Smith"], // object property
+          //   age: 32, // object property
+          //   bio() { // object method (function inside object)
+          //     console.log(
+          //       `${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+          //   },
+          //   introduceSelf() { // object method (function inside object)
+          //     console.log(`Hi! I'm ${this.name[0]}.`);
+          //   },
+          // };
+        
+      // We've "literally" written out the object contents as we've come to create it.
+
+      // It is very common to create an object using an object literal when you want to transfer a series of structured, related data items in some manner, (sending a request to the server to be put into a database).
+
+
+      // -- Dot notation --
+        // The object name(person) acts as the namespace it must be entered first to access anything inside the object. Next the . then the item you want to access. person.age; person.bio();
+
+      // -- Objects as object properties --
+        // An object property can itself be an object. 
+          // const person = {
+          //   name: { object as object property
+          //    first: "Bob",
+          //    last: "Smith",
+          //   },
+          //   age: 32,
+          //   bio() {
+          //     console.log(
+          // `${this.name.first} ${this.name.last} is ${this.age} years old.`)
+          //   },
+          //   introduceSelf() {
+          //      console.log(`Hi! I'm ${this.name.first}.`);
+          //    };
+          // };
+
+          // To access these items you need to chain the extra step onto the end with another dot. Also need to change the method code from name[0] to name.first or name.last
+          // person.name.first -- "Bob"
+          // person.name.last -- "Smith"
+
+      // -- Bracket notation --
+        // Provides an alternative way to access object properties instead of   dot notation 
+      // Instead of person.age; or person.name.first;
+        // you can do person["age"]; person["name"]["first"];
+
+        // const user = {
+        //   name: ["Bob", "Smith"],
+        //   age: 32,
+        // };
+
+        // function logProperty(propertyName) {
+        //   console.log(user[propertyName]);
+        // }
+        // logProperty("name"); // ["Bob", "Smith"]
+        // logProperty("age"); // 32
+
+      // -- Setting object members
+        // We have been retrieving or (getting) object members, you can also set(update) the value of object members by declaring the member you want to set using dot or bracket notation.
+          // person.age = 45;
+          // person["name"]["last"] = "Cratchit";
+
+          // const user = {
+          //   name: ["Bob", "Smith"],
+          //   age: 32,
+          // };
+
+          // function logProperty(propertyName) {
+          //   console.log(user[propertyName]);
+          // }
+        
+          // logProperty("name"); // ["Bob", "Smith"]
+          // logProperty("age"); // 32
+        
+          // // updated the age and last name
+          // user.age = 45;
+          // user["name"][1] = "Cratchit";
+
+          // logProperty("name"); // ["Bob", "Cratchit"]
+          // logProperty("age"); // 45
