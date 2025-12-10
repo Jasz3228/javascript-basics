@@ -10,7 +10,43 @@
     <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
     
     <script>
+      // -- Object literal --
+      const person = {
+        name: ["Bob", "Smith"], // object property
+        age: 32, // object property
+        bio() { // object method (function inside object)
+          console.log(
+            `${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+        },
+        introduceSelf() { // object method (function inside object)
+          console.log(`Hi! I'm ${this.name[0]}.`);
+        },
+      };
+      // person.name -- ["Bob", "Smith"]
+      // person.name[0] -- "Bob"
+      // person.age; -- 32
+      // person.bio(); "Bob Smith is 32 years old."
+      // person.introduceSelf(); -- "Hi! I'm Bob."
+      
+      // -- Bracket notation --
+      const user = {
+        name: ["Bob", "Smith"],
+        age: 32,
+      };
 
+      function logProperty(propertyName) {
+        console.log(user[propertyName]);
+      }
+   
+      logProperty("name"); // ["Bob", "Smith"]
+      logProperty("age"); // 32
+   
+      // updated the age and last name
+      user.age = 45;
+      user["name"][1] = "Cratchit";
+
+      logProperty("name"); // ["Bob", "Cratchit"]
+      logProperty("age"); // 45
     </script>
   </body>
 
