@@ -589,3 +589,22 @@
 
           // logProperty("name"); // ["Bob", "Cratchit"]
           // logProperty("age"); // 45
+
+        // You can also create completely new members.
+          // person["eyes"] = "hazel";
+          // person.farewell = function () {
+          //   console.log("Bye everybody!")
+          // };
+
+      
+      // -- What is "this"
+        // const person = {
+        //    .....
+        //   introduceSelf() {
+        //      console.log(`Hi! I'm ${this.name[0]}.`);
+        //   },
+        // } 
+
+        // "this" keyword typically refers to the current object the code is being executed in. In the context of an object method, this refers to the object that the method was called on.
+
+        // Not very useful when writing out object literals by hand, but will be essential when using constructors to create more than one object from a single object definition.

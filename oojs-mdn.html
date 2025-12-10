@@ -22,11 +22,19 @@
           console.log(`Hi! I'm ${this.name[0]}.`);
         },
       };
+      
       // person.name -- ["Bob", "Smith"]
       // person.name[0] -- "Bob"
       // person.age; -- 32
       // person.bio(); "Bob Smith is 32 years old."
       // person.introduceSelf(); -- "Hi! I'm Bob."
+
+      
+      person.farewell = function () {
+        console.log("Bye everybody!");
+      };
+      
+      person.farewell();
       
       // -- Bracket notation --
       const user = {
@@ -45,8 +53,14 @@
       user.age = 45;
       user["name"][1] = "Cratchit";
 
+      // Add eye color
+      user["eyes"] = "hazel";
+      
+      
       logProperty("name"); // ["Bob", "Cratchit"]
       logProperty("age"); // 45
+      logProperty("eyes"); // "hazel"
+      
     </script>
   </body>
 
