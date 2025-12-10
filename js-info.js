@@ -867,3 +867,58 @@
             // };
 
         // If you want to display integers in creation order place a + before the num "+49", "+41", "+44", "+1"
+
+
+// Tasks to be completed for javascript basics lesson objects
+    
+    // Map to names
+        // You have an array of user objects, each one has user.name. Write the code that converts it into an array of names
+
+        // let john = { name: "John", age: 25 };
+        // let pete = { name: "Pete", age: 30 };
+        // let mary = { name: "Mary", age: 28 };
+
+        // let users = [ john, pete, mary ];
+        
+        // let names = users.map(item => item.name);
+
+        // console.log(names);
+
+    // Map to objects
+        // You have an array of user objects, each one has a name, surname and id. Write code to create another array from it, of objects with id and fullName, where fullName is generated from name and surname.
+
+        // let john = { name: "John", surname: "Smith", id: 1 };
+        // let pete = { name: "Pete", surname: "Hunt", id: 2 };
+        // let mary = { name: "Mary", surname: "Key", id: 3 };
+
+        // let users = [ john, pete, mary ];
+
+        // let usersMapped = users.map(user => ({
+        //     fullName: `${user.name} ${user.surname}`, id: user.id}));
+        
+        // console.log(usersMapped[0].id);
+        // console.log(usersMapped[0].fullName);
+
+        
+        // usersMapped = [
+        // { fullName: "John Smith", id: 1 },
+        // { fullName: "Pete Hunt", id: 2 },
+        // { fullName: "Mary Key", id: 3 }
+        // ]
+        
+    // Sort users by age
+        // write the function sortByAge(users) that gets an array of objects with the age property and sorts them by age.
+
+        function sortByAge(arr) {
+            arr.sort((a, b) => a.age - b.age);
+        }
+
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 28 };
+
+        let arr = [ pete, john, mary ];
+
+        
+        sortByAge(arr);
+        console.log(arr);
