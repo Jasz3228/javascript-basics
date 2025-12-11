@@ -909,16 +909,64 @@
     // Sort users by age
         // write the function sortByAge(users) that gets an array of objects with the age property and sorts them by age.
 
-        function sortByAge(arr) {
-            arr.sort((a, b) => a.age - b.age);
-        }
+        // function sortByAge(arr) {
+        //     arr.sort((a, b) => a.age - b.age);
+        // }
 
-        let john = { name: "John", age: 25 };
-        let pete = { name: "Pete", age: 30 };
-        let mary = { name: "Mary", age: 28 };
+        // let john = { name: "John", age: 25 };
+        // let pete = { name: "Pete", age: 30 };
+        // let mary = { name: "Mary", age: 28 };
 
-        let arr = [ pete, john, mary ];
+        // let arr = [ pete, john, mary ];
 
         
-        sortByAge(arr);
-        console.log(arr);
+        // sortByAge(arr);
+        // console.log(arr);
+
+    // Get average age
+        // Write the function (getAverageAge(users)) that gets an array of objects with property (age) and returns the average age.
+
+        // Formula for average is (age1 + age2 + ... + ageN) / N.
+
+        // let john = { name: "John", age: 25 };
+        // let pete = { name: "Pete", age: 30 };
+        // let mary = { name: "Mary", age: 29 };
+
+        // let arr = [ john, pete, mary ];
+
+        // function getAverageAge(users) {
+        //     let arr = (users[0].age + users[1].age + users[2].age) / 3;
+        //     console.log(arr) // this worked but their solution used .reduce()
+        // }
+        // getAverageAge(arr);
+
+    // Create keyed object from array
+        // Let's say we received an array of users in the form {id:..., name:..., age...}.
+        
+        // Create a function groupById(arr) that creates an object from it, with id as the key, and array items as values.
+
+        // function groupById(arr) {
+        //    return arr.reduce((obj, value) => {
+        //     obj[value.id] = value;
+        //     return obj;
+        //    }, {})
+        // };
+
+        // let users = [
+        //     {id: 'john', name: "John Smith", age: 20},
+        //     {id: 'ann', name: "Ann Smith", age: 24},
+        //     {id: 'pete', name: "Pete Peterson", age: 31},
+        // ];
+
+   
+
+        // let usersById = groupById(users);
+
+        // console.log(usersById);
+        // {
+        //     john: {id: 'john', name: "John Smith", age: 20},
+        //     ann: {id: 'ann', name: "Ann Smith", age: 24},
+        //     pete: {id: 'pete', name: "Pete Peterson", age: 31}
+        // }
+
+       
